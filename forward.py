@@ -370,10 +370,10 @@ async def forward(event):
                                     await event.reply(
                                         f"BadRequest Error in `{i}` : `{e}`"
                                     )
-                                except Exception as e:
+                                """except Exception as e:
                                     await event.reply(
                                         f"Error in sending message in {i} due to : `{e}`"
-                                    )
+                                    )"""
                                     fail += 1
                                 if int(success) % len(owo) == 0:
                                     stime = random.randint(1200, 1500)
