@@ -370,7 +370,7 @@ async def forward(event):
                                     await event.reply(
                                         f"BadRequest Error in `{i}` : `{e}`"
                                     )
-                                except Exception as e:
+                                except Exception:
                                     """await event.reply(
                                         f"Error in sending message in {i} due to : `{e}`"
                                     )"""
