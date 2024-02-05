@@ -46,7 +46,7 @@ option_keyboard = [
 async def start(event):
     if not check_sudo(event.sender_id):
         return await event.reply(
-            "Hello Sir,\n\nWelcome To Join The List of Group and Forward Your Message in Multiple Group. Contact The Owner to Buy this bot Click Below and Start Talking With My Boss\n\n        Thanks 🙏.",
+            "Developer",
             buttons=owner_keyboard,
         )
     await event.reply(
@@ -407,10 +407,9 @@ async def forward(event):
 async def startup_process():
     for i in SUDO_USERS:
         try:
-            await client.send_file(
+            await client.send_message(
                 i,
-                file="https://telegra.ph/file/2707a66c92ba3c2e40cee.jpg",
-                caption=f"#START\n\nVersion:- α • 1.0\n\nYour Ads Promotion Bot Has Been Started Successfully",
+                f"#START\n\n**Version** :- α • 1.0\n**Developed By** : [Legend](https://t.me/LegendBoy_OP)\n\nYour Ads Promotion Bot Has Been Started Successfully",
                 buttons=option_keyboard,
             )
         except:
