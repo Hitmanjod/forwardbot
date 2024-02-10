@@ -409,7 +409,7 @@ async def startup_process():
         try:
             await client.send_message(
                 i,
-                f"#START\n\n**Version** :- α • 1.0\n**Developed By** : [Legend](https://t.me/LegendBoy_OP)\n\nYour Ads Promotion Bot Has Been Started Successfully",
+                f"#START\n\n**Version** :- α • 1.0\n**Developed By** : Legend [ Developer / Bot Maker ]\n\nYour Ads Promotion Bot Has Been Started Successfully",
                 buttons=option_keyboard,
             )
         except:
